@@ -1,6 +1,6 @@
 # Game guess chat GPT-3
 
-*DEMO*: https://cerulean-capybara-ea8e67.netlify.app/
+DEMO: https://cerulean-capybara-ea8e67.netlify.app/
 
 Guess game built with chat gpt3 for fun
 
