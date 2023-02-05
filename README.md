@@ -1,4 +1,4 @@
-# game_guesser_chat_gpt3
+# Game guess chat GPT-3
 
 Guess game built with chat gpt3 for fun
 
