@@ -1,0 +1,97 @@
+const countries = {"Ascension Island": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e8.svg","Andorra": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1e9.svg","United Arab Emirates": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ea.svg","Afghanistan": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1eb.svg","Antigua & Barbuda": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ec.svg","Anguilla": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ee.svg","Albania": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f1.svg","Armenia": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f2.svg","Angola": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f4.svg","Antarctica": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f6.svg","Argentina": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f7.svg","American Samoa": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f8.svg","Austria": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1f9.svg","Australia": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fa.svg","Aruba": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fc.svg","Åland Islands": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1fd.svg","Azerbaijan": "https://twemoji.maxcdn.com/2/svg/1f1e6-1f1ff.svg","Bosnia & Herzegovina": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e6.svg","Barbados": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e7.svg","Bangladesh": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1e9.svg","Belgium": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ea.svg","Burkina Faso": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1eb.svg","Bulgaria": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ec.svg","Bahrain": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ed.svg","Burundi": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ee.svg","Benin": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ef.svg","St. Barthélemy": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f1.svg","Bermuda": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f2.svg","Brunei": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f3.svg","Bolivia": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f4.svg","Caribbean Netherlands": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f6.svg","Brazil": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f7.svg","Bahamas": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f8.svg","Bhutan": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1f9.svg","Bouvet Island": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fb.svg","Botswana": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fc.svg","Belarus": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1fe.svg","Belize": "https://twemoji.maxcdn.com/2/svg/1f1e7-1f1ff.svg","Canada": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e6.svg","Cocos (Keeling) Islands": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e8.svg","Congo - Kinshasa": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1e9.svg","Central African Republic": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1eb.svg","Congo - Brazzaville": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ec.svg","Switzerland": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ed.svg","Côte d’Ivoire": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ee.svg","Cook Islands": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f0.svg","Chile": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f1.svg","Cameroon": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f2.svg","China": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f3.svg","Colombia": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f4.svg","Clipperton Island": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f5.svg","Costa Rica": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f7.svg","Cuba": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fa.svg","Cape Verde": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fb.svg","Curaçao": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fc.svg","Christmas Island": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fd.svg","Cyprus": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1fe.svg","Czechia": "https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ff.svg","Germany": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ea.svg","Diego Garcia": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ec.svg","Djibouti": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ef.svg","Denmark": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f0.svg","Dominica": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f2.svg","Dominican Republic": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1f4.svg","Algeria": "https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ff.svg","Ceuta & Melilla": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e6.svg","Ecuador": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1e8.svg","Estonia": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ea.svg","Egypt": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ec.svg","Western Sahara": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1ed.svg","Eritrea": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f7.svg","Spain": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f8.svg","Ethiopia": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f9.svg","European Union": "https://twemoji.maxcdn.com/2/svg/1f1ea-1f1fa.svg","Finland": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1ee.svg","Fiji": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1ef.svg","Falkland Islands": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f0.svg","Micronesia": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f2.svg","Faroe Islands": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f4.svg","France": "https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg","Gabon": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e6.svg","United Kingdom": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg","Grenada": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e9.svg","Georgia": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ea.svg","French Guiana": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1eb.svg","Guernsey": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ec.svg","Ghana": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ed.svg","Gibraltar": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1ee.svg","Greenland": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f1.svg","Gambia": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f2.svg","Guinea": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f3.svg","Guadeloupe": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f5.svg","Equatorial Guinea": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f6.svg","Greece": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f7.svg","South Georgia & South', Sandwich Islands": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f8.svg","Guatemala": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1f9.svg","Guam": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fa.svg","Guinea-Bissau": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fc.svg","Guyana": "https://twemoji.maxcdn.com/2/svg/1f1ec-1f1fe.svg","Hong Kong SAR China": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f0.svg","Heard & McDonald Islands": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f2.svg","Honduras": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f3.svg","Croatia": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f7.svg","Haiti": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f9.svg","Hungary": "https://twemoji.maxcdn.com/2/svg/1f1ed-1f1fa.svg","Canary Islands": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1e8.svg","Indonesia": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1e9.svg","Ireland": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1ea.svg","Israel": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f1.svg","Isle of Man": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f2.svg","India": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f3.svg","British Indian Ocean Territory": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f4.svg","Iraq": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f6.svg","Iran": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f7.svg","Iceland": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f8.svg","Italy": "https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f9.svg","Jersey": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1ea.svg","Jamaica": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f2.svg","Jordan": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f4.svg","Japan": "https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f5.svg","Kenya": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ea.svg","Kyrgyzstan": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ec.svg","Cambodia": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ed.svg","Kiribati": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ee.svg","Comoros": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f2.svg","St. Kitts & Nevis": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f3.svg","North Korea": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f5.svg","South Korea": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1f7.svg","Kuwait": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1fc.svg","Cayman Islands": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1fe.svg","Kazakhstan": "https://twemoji.maxcdn.com/2/svg/1f1f0-1f1ff.svg","Laos": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e6.svg","Lebanon": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e7.svg","St. Lucia": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1e8.svg","Liechtenstein": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1ee.svg","Sri Lanka": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f0.svg","Liberia": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f7.svg","Lesotho": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f8.svg","Lithuania": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1f9.svg","Luxembourg": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fa.svg","Latvia": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fb.svg","Libya": "https://twemoji.maxcdn.com/2/svg/1f1f1-1f1fe.svg","Morocco": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e6.svg","Monaco": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e8.svg","Moldova": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1e9.svg","Montenegro": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ea.svg","St. Martin": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1eb.svg","Madagascar": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ec.svg","Marshall Islands": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ed.svg","North Macedonia": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f0.svg","Mali": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f1.svg","Myanmar (Burma)": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f2.svg","Mongolia": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f3.svg","Macao Sar China": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f4.svg","Northern Mariana Islands": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f5.svg","Martinique": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f6.svg","Mauritania": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f7.svg","Montserrat": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f8.svg","Malta": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1f9.svg","Mauritius": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fa.svg","Maldives": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fb.svg","Malawi": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fc.svg","Mexico": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fd.svg","Malaysia": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1fe.svg","Mozambique": "https://twemoji.maxcdn.com/2/svg/1f1f2-1f1ff.svg","Namibia": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1e6.svg","New Caledonia": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1e8.svg","Niger": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ea.svg","Norfolk Island": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1eb.svg","Nigeria": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ec.svg","Nicaragua": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ee.svg","Netherlands": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f1.svg","Norway": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f4.svg","Nepal": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f5.svg","Nauru": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1f7.svg","Niue": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1fa.svg","New Zealand": "https://twemoji.maxcdn.com/2/svg/1f1f3-1f1ff.svg","Oman": "https://twemoji.maxcdn.com/2/svg/1f1f4-1f1f2.svg","Panama": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1e6.svg","Peru": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ea.svg","French Polynesia": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1eb.svg","Papua New Guinea": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ec.svg","Philippines": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1ed.svg","Pakistan": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f0.svg","Poland": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f1.svg","St. Pierre & Miquelon": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f2.svg","Pitcairn Islands": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f3.svg","Puerto Rico": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f7.svg","Palestinian Territories": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f8.svg","Portugal": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f9.svg","Palau": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1fc.svg","Paraguay": "https://twemoji.maxcdn.com/2/svg/1f1f5-1f1fe.svg","Qatar": "https://twemoji.maxcdn.com/2/svg/1f1f6-1f1e6.svg","Réunion": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1ea.svg","Romania": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1f4.svg","Serbia": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1f8.svg","Russia": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1fa.svg","Rwanda": "https://twemoji.maxcdn.com/2/svg/1f1f7-1f1fc.svg","Saudi Arabia": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e6.svg","Solomon Islands": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e7.svg","Seychelles": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e8.svg","Sudan": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1e9.svg","Sweden": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ea.svg","Singapore": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ec.svg","St. Helena": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ed.svg","Slovenia": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ee.svg","Svalbard & Jan Mayen": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ef.svg","Slovakia": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f0.svg","Sierra Leone": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f1.svg","San Marino": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f2.svg","Senegal": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f3.svg","Somalia": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f4.svg","Suriname": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f7.svg","South Sudan": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f8.svg","São Tomé & Príncipe": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1f9.svg","El Salvador": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fb.svg","Sint Maarten": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fd.svg","Syria": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1fe.svg","Eswatini": "https://twemoji.maxcdn.com/2/svg/1f1f8-1f1ff.svg","Tristan Da Cunha": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e6.svg","Turks & Caicos Islands": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e8.svg","Chad": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1e9.svg","French Southern Territories": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1eb.svg","Togo": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ec.svg","Thailand": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ed.svg","Tajikistan": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ef.svg","Tokelau": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f0.svg","Timor-Leste": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f1.svg","Turkmenistan": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f2.svg","Tunisia": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f3.svg","Tonga": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f4.svg","Turkey": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f7.svg","Trinidad & Tobago": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f9.svg","Tuvalu": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fb.svg","Taiwan": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fc.svg","Tanzania": "https://twemoji.maxcdn.com/2/svg/1f1f9-1f1ff.svg","Ukraine": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1e6.svg","Uganda": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1ec.svg","U.S. Outlying Islands": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f2.svg","United Nations": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f3.svg","United States": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg","Uruguay": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1fe.svg","Uzbekistan": "https://twemoji.maxcdn.com/2/svg/1f1fa-1f1ff.svg","Vatican City": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1e6.svg","St. Vincent & Grenadines": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1e8.svg","Venezuela": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ea.svg","British Virgin Islands": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ec.svg","U.S. Virgin Islands": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1ee.svg","Vietnam": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1f3.svg","Vanuatu": "https://twemoji.maxcdn.com/2/svg/1f1fb-1f1fa.svg","Wallis & Futuna": "https://twemoji.maxcdn.com/2/svg/1f1fc-1f1eb.svg","Samoa": "https://twemoji.maxcdn.com/2/svg/1f1fc-1f1f8.svg","Kosovo": "https://twemoji.maxcdn.com/2/svg/1f1fd-1f1f0.svg","Yemen": "https://twemoji.maxcdn.com/2/svg/1f1fe-1f1ea.svg","Mayotte": "https://twemoji.maxcdn.com/2/svg/1f1fe-1f1f9.svg","South Africa": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1e6.svg","Zambia": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1f2.svg","Zimbabwe": "https://twemoji.maxcdn.com/2/svg/1f1ff-1f1fc.svg","England": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.svg","Scotland": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.svg","Wales": "https://twemoji.maxcdn.com/2/svg/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.svg",}
+
+const flagImage = document.getElementById("flag");
+const optionButtons = [
+  document.getElementById("option1"),
+  document.getElementById("option2"),
+  document.getElementById("option3"),
+  document.getElementById("option4")
+];
+
+/**
+ * Get country name.
+ *
+ * For instance Argentina
+ *
+ * @returns {string}
+ *   The country name.
+ */
+function getRandomCountry() {
+  return Object.keys(countries)[Math.floor(Math.random() * Object.keys(countries).length)];
+}
+
+/**
+ *
+ * @param answer
+ *   The answer to guess the country name.
+ *   For instance 'Canada'.
+ *
+ * @param countries
+ *   A json object represented as below:
+ *   {
+ *   "Argentina": "https://flagcdn.com/256x192/ar.png",
+ *   "Australia": "https://flagcdn.com/256x192/au.png",
+ *   "Brazil": "https://flagcdn.com/256x192/br.png",
+ *   "Argentina": "https://flagcdn.com/256x192/ar.png",
+ *   "Australia": "https://flagcdn.com/256x192/au.png",
+ *   "Brazil": "https://flagcdn.com/256x192/br.png",
+ *   "Canada": "https://flagcdn.com/256x192/ca.png"
+ *   };
+ *
+ * @returns {*[]}
+ *   Get options as array for instance:
+ *   ['Argentina', 'Canada', 'Brazil', 'Australia'].
+ */
+function getOptions(answer, countries) {
+  console.log(countries);
+  const options = [answer];
+  while (options.length < 4) {
+    const country = Object.keys(countries)[Math.floor(Math.random() * Object.keys(countries).length)];
+    if (!options.includes(country)) {
+      options.push(country);
+    }
+  }
+  console.log(options);
+  return options;
+}
+
+/**
+ * Display options in HTML.
+ *
+ * @param options
+ *   Array of options like the following:
+ *   ['Argentina', 'Canada', 'Brazil', 'Australia'].
+ */
+function displayOptions(options) {
+  for (let i = 0; i < options.length; i++) {
+    optionButtons[i].innerHTML = options[i];
+    optionButtons[i].addEventListener("click", function() {
+      checkAnswer(options[i]);
+    });
+  }
+}
+
+function checkAnswer(answer) {
+  for (const button of optionButtons) {
+    button.disabled = true;
+  }
+  if (answer === currentAnswer) {
+    alert("Correct!");
+  } else {
+    alert("Incorrect!");
+  }
+  location.reload();
+}
+
+let currentAnswer;
+
+function playGame() {
+  currentAnswer = getRandomCountry();
+  flagImage.src = countries[currentAnswer];
+  console.log(flagImage.src);
+  console.log(currentAnswer);
+  const options = getOptions(currentAnswer, countries);
+  displayOptions(options);
+}
+
+playGame();
